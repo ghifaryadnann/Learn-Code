@@ -170,4 +170,129 @@ for (let angka = 0; angka < 11; angka++) {
        sayuran.push("kangkung", "buncis", "cabe")
 
        console.log(sayuran)
-   
+
+//practice 13 Function and Object
+
+function cetakFuction(){
+  return "ghifary"
+}
+
+console.log("Hallo Nama saya " + cetakFuction())
+
+let angka1 = 70
+let angka2 = 4
+
+function cetakAngka(){
+    return (angka1+angka2)
+}
+
+let output = cetakAngka(angka1,angka2)
+
+console.log(output)
+
+const Hello = () => {
+  return "allo"
+}
+
+console.log(Hello())
+
+
+let obj = {
+  nama : "john",
+  umur : 22,
+  bahasa : "indonesia"
+  }
+
+  console.log(obj.bahasa)
+
+let arrayDaftarPeserta = ["John Doe", "laki-laki", "baca buku" , 1992]
+let objDaftarPeserta = {
+  nama : arrayDaftarPeserta[0],
+  kelamin : arrayDaftarPeserta[1],
+  hobi : arrayDaftarPeserta[2],
+  tahunlahir : arrayDaftarPeserta[3],
+}
+
+console.log(objDaftarPeserta)
+
+
+let namaBuah = [
+  {
+    nama: "Jeruk",
+    warna: "Orange",
+    adaBijinya: true,
+    harga: 9000
+  },
+  {
+    nama: "Pepaya",
+    warna: "Hijau",
+    adaBijinya: true,
+    harga: 8000
+  },
+  {
+    nama: "Pisang",
+    warna: "Kuning",
+    adaBijinya: false,
+    harga: 1000
+  },
+  {
+    nama: "Brokoli",
+    warna: "Putih",
+    adaBijinya: false,
+    harga: 3000
+  },
+  
+
+]
+
+let filterNamaBuah = namaBuah.filter(function(item){
+  return item.adaBijinya != true;
+})
+
+console.log(filterNamaBuah)
+
+let phone = {
+  nama: "Galaxy Note 20",
+  brand: "Samsung",
+  year: 2020
+}
+// kode diatas ini jangan di rubah atau di hapus sama sekali
+
+const {nama, brand, year} = phone
+
+
+// kode di bawah ini jangan dirubah atau dihapus
+console.log(nama, brand, year)
+
+let dataBukuTambahan= {
+  penulis: "john doe",
+  tahunTerbit: 2020 
+}
+
+let buku = {
+  nama: "pemograman dasar",
+  jumlahHalaman: 172
+}
+
+let objOutput = {
+  ...dataBukuTambahan, ...buku
+}
+
+
+// kode di bawah ini jangan dirubah atau dihapus
+console.log(objOutput) 
+
+
+let mobil = {
+  merk : "bmw",
+  color: "red",
+  year : 2002
+  }
+  
+  const functionObject = (param) => {
+  
+  return param
+  
+  }
+
+  console.log(functionObject(mobil))
