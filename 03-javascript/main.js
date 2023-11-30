@@ -120,3 +120,54 @@ switch (lampu) {
   default:
     console.log(`Sorry, we are out of ${lampu}.`);
 }
+
+//practice 11 looping
+
+for (let angka = 0; angka < 11; angka++) {
+    console.log('Iterasi ke-' + angka);
+  } 
+
+  //angka ganjil
+
+  for(var deret = 1; deret < 10; deret += 2) {
+    console.log('Iterasi dengan Increment counter 2: ' + deret);
+  }
+
+  //angka genap
+  
+  for(var deret = 0; deret < 10; deret += 2) {
+    console.log('Iterasi dengan Increment counter 2: ' + deret);
+  }
+
+  //practice 12 array
+
+  let arrayku = [1,2,3,4,5,6]
+  console.log(arrayku[5])
+
+  let arrayUrut = [5,2,1,3,4]
+  arrayUrut.sort()
+  console.log(arrayUrut)
+
+  let array3 = ["selamat", "anda", "melakukan", "perulangan", "array", "dengan", "for"]
+  for(var i = 0; i < array3.length; i++) {
+    console.log(array3[i]);
+     }
+
+     let array4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+     for(var i = 0; i < array4.length; i++) {
+      const filteredArray = array4.filter(i => i % 2 === 0);
+      
+      console.log(filteredArray[i]);
+       }
+
+       let kalimat= ["saya", "sangat", "senang", "belajar", "javascript"]
+       let sambungKata = kalimat.join(" ")
+
+       console.log(sambungKata)
+
+
+       let sayuran = []
+       sayuran.push("kangkung", "buncis", "cabe")
+
+       console.log(sayuran)
+   
